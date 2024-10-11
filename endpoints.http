@@ -1,0 +1,30 @@
+#PARA UTILIZAR ESSES ENDPOINTS É NECESSÁRIO INSTALAR A EXTENSÃO DO VSCODE "REST CLIENT"
+###
+
+GET http://localhost:3333/filmes
+
+###
+
+POST http://localhost:3333/filmes
+Content-Type: application/json
+
+{
+    "nome": "Os Vingadores",
+    "genero": "ficçaõ",
+    "diretor": "Joe Russo"
+}
+
+###
+
+PUT http://localhost:3333/filmes/1998f15a-d0b3-4e08-ae1c-49e2e1ff8df3
+Content-Type: application/json
+
+{
+    "nome": "deadpool",
+    "genero": "ficçaõ",
+    "diretor": "Tim Miller"
+}
+
+###
+
+DELETE http://localhost:3333/users/id
